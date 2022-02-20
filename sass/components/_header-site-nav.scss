@@ -1,0 +1,78 @@
+@import '../utils/variables';
+
+.site-nav {
+  @media screen and(max-width:400px) {
+    margin-top: 48px;
+    margin-left: 40px;
+    margin-bottom: 180px;
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 767px) {
+    margin-top: 48px;
+    margin-left: 40px;
+    margin-bottom: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+}
+
+.site-nav__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      padding-bottom: 32px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.site-nav__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 40px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.site-nav__link--after::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+
+    position: absolute;
+
+    background: $accent-color;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.active {
+  color: $accent-color;
+  // @media screen and (max-width: 767px) {
+  //   color: $accent-color;
+  // }
+}

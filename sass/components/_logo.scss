@@ -1,0 +1,30 @@
+@import '../utils/variables';
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: #000000;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  margin-right: auto;
+}
+
+.logo-footer {
+  @media screen and(max-width:1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.logo__name {
+  color: $accent-color;
+}
+
+.logo__name--color {
+  color: $accent-text-color;
+}

@@ -1,0 +1,73 @@
+@import '../utils/variables';
+
+.section-button {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../img/header_img/mobile_header_img@1x.jpg');
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and(min-resolution: 2dppx) {
+  .section-button {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/header_img/mobile_header_img@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section-button {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/header_img/tablet_header_img@1x.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and(min-resolution: 2dppx) {
+    .section-button {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../img/header_img/tablet_header_img@2x.jpg');
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-button {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/header_img/desktop_header_img@1x.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and(min-resolution: 2dppx) {
+    .section-button {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../img/header_img/desktop_header_img@2x.jpg');
+    }
+  }
+}
+.section-button__title {
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $accent-text-color;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  text-align: center;
+
+  @media screen and(max-width:1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.main-button--margin {
+  margin-bottom: 200px;
+}

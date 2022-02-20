@@ -1,0 +1,43 @@
+@import '../utils/variables';
+
+.works {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.works__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 30px * 3) / 3);
+}
+.works-list__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.works-list__text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $accent-text-color;
+  background: rgba(47, 48, 58, 0.8);
+}
